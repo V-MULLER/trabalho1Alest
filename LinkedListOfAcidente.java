@@ -1,30 +1,32 @@
-package Trabalho1;
+//package Trabalho1;
+
+//LISTA COM CADA NODO SENDO UM ACIDENTE DA RUA
 
 public class LinkedListOfAcidente {
+	private Node head;
+	private Node tail;
+	private int count;
+
 	private class Node {
 		public Acidente acidente;
 		public Node next;
-		
+
 		 public Node(Acidente acidente) {
 	            this.acidente = acidente;
 	            next = null;
 	     }
-		 
+
 		 public Node(Acidente acidente, Node next) {
 	            this.acidente = acidente;
 	            this.next = next;
 	     }
 	}
-	
-	private Node head;
-	private Node tail;
-	private int count;
-	
+
 	 public LinkedListOfAcidente() {
-	        head = null;
-	        tail = null;
-	        count = 0;
-	    }
+		head = null;
+		tail = null;
+		count = 0;
+	}
 	 
 	 public boolean isEmpty() {
 	        return (head == null);
@@ -39,7 +41,6 @@ public class LinkedListOfAcidente {
 	 
 	 public void add(int index, Acidente acidente) {
 	 }
-	 
 	 
 	 public Integer get(int index) {
 		 return 0;
@@ -67,4 +68,5 @@ public class LinkedListOfAcidente {
 	 
 	 public void clear() {
 	 }
+
 }

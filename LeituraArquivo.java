@@ -48,9 +48,14 @@ public class LeituraArquivo {
             String tempo = campos[15];
             String turno = campos[16];
             String regiao = campos[17];
-            System.out.println(logradouro+" "+nomeLog+"; "+tipoAcidente+"; "+data.toString()+"; "+tempo+"; "+turno+"; "+regiao); 
-                    
+            //System.out.println(logradouro+" "+nomeLog+"; "+tipoAcidente+"; "+data.toString()+"; "+tempo+"; "+turno+"; "+regiao);
+            //Acidente aci = new Acidente(logradouro,nomeLog, tipoAcidente, data,diaSemana,feridos,fatais,auto,taxi,lotacao,onibusUrb,onibusInt,caminhao,moto, carroca,bicicleta, tempo, turno, regiao);
+            Acidente aci = new Acidente(nomeLog, data,diaSemana,feridos,fatais,auto,taxi,lotacao,onibusUrb,onibusInt,caminhao,moto, carroca,bicicleta, tempo, turno, regiao);
+            System.out.println(aci);
         }
+
+        StreetList listaRua = new StreetList();
+        listaRua.next();
     }
 }
 

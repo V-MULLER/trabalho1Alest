@@ -1,11 +1,13 @@
-package Trabalho1;
+//package Trabalho1;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 public class Acidente {
 
 	private String nomeLogradouro;
 
-	private Date dataHora;
+	//private Date dataHora;
+	private LocalDateTime data;
 
 	private String diaDaSemana;
 
@@ -40,12 +42,13 @@ public class Acidente {
 	public Acidente() {
 	}
 
-	public Acidente(String nomeLogradouro, Date dataHora, String diaDaSemana, int feridos, int fatais, int auto,
+	public Acidente(String nomeLogradouro, LocalDateTime data, String diaDaSemana, int feridos, int fatais, int auto,
 			int taxi, int lotacao, int onibusUrb, int onibusInt, int caminhao, int moto, int carroca, int bicicleta,
 			String tempo, String turno, String regiao) {
 		super();
 		this.nomeLogradouro = nomeLogradouro;
-		this.dataHora = dataHora;
+		//this.dataHora = dataHora;
+		this.data = data;
 		this.diaDaSemana = diaDaSemana;
 		this.feridos = feridos;
 		this.fatais = fatais;
@@ -67,143 +70,96 @@ public class Acidente {
 		return nomeLogradouro;
 	}
 
-	public void setNomeLogradouro(String nomeLogradouro) {
-		this.nomeLogradouro = nomeLogradouro;
-	}
-
-	public Date getDataHora() {
-		return dataHora;
-	}
-
-	public void setDataHora(Date dataHora) {
-		this.dataHora = dataHora;
+	//public Date getDataHora() {
+	public LocalDateTime getData(){
+		return data;
 	}
 
 	public String getDiaDaSemana() {
 		return diaDaSemana;
 	}
 
-	public void setDiaDaSemana(String diaDaSemana) {
-		this.diaDaSemana = diaDaSemana;
-	}
-
 	public int getFeridos() {
 		return feridos;
-	}
-
-	public void setFeridos(int feridos) {
-		this.feridos = feridos;
 	}
 
 	public int getFatais() {
 		return fatais;
 	}
 
-	public void setFatais(int fatais) {
-		this.fatais = fatais;
-	}
-
 	public int getAuto() {
 		return auto;
-	}
-
-	public void setAuto(int auto) {
-		this.auto = auto;
 	}
 
 	public int getTaxi() {
 		return taxi;
 	}
 
-	public void setTaxi(int taxi) {
-		this.taxi = taxi;
-	}
-
 	public int getLotacao() {
 		return lotacao;
-	}
-
-	public void setLotacao(int lotacao) {
-		this.lotacao = lotacao;
 	}
 
 	public int getOnibusUrb() {
 		return onibusUrb;
 	}
 
-	public void setOnibusUrb(int onibusUrb) {
-		this.onibusUrb = onibusUrb;
-	}
-
 	public int getOnibusInt() {
 		return onibusInt;
-	}
-
-	public void setOnibusInt(int onibusInt) {
-		this.onibusInt = onibusInt;
 	}
 
 	public int getCaminhao() {
 		return caminhao;
 	}
 
-	public void setCaminhao(int caminhao) {
-		this.caminhao = caminhao;
-	}
-
 	public int getMoto() {
 		return moto;
-	}
-
-	public void setMoto(int moto) {
-		this.moto = moto;
 	}
 
 	public int getCarroca() {
 		return carroca;
 	}
 
-	public void setCarroca(int carroca) {
-		this.carroca = carroca;
-	}
-
 	public int getBicicleta() {
 		return bicicleta;
-	}
-
-	public void setBicicleta(int bicicleta) {
-		this.bicicleta = bicicleta;
 	}
 
 	public String getTempo() {
 		return tempo;
 	}
 
-	public void setTempo(String tempo) {
-		this.tempo = tempo;
-	}
-
 	public String getTurno() {
 		return turno;
-	}
-
-	public void setTurno(String turno) {
-		this.turno = turno;
 	}
 
 	public String getRegiao() {
 		return regiao;
 	}
 
-	public void setRegiao(String regiao) {
-		this.regiao = regiao;
-	}
-	
 	public int totalAcidentes() {
 		return getFeridos() + getFatais() + getAuto() + getTaxi() + getLotacao() + getOnibusUrb() + 
 				getOnibusInt() + getCaminhao() + getMoto() + getCarroca() + getBicicleta();
 	}
 
-
-
+	@Override
+	public String toString() {
+		return "Acidente{" +
+				"nomeLogradouro='" + nomeLogradouro + '\'' +
+				", dataHora=" + data+
+				", diaDaSemana='" + diaDaSemana + '\'' +
+				", feridos=" + feridos +
+				", fatais=" + fatais +
+				", auto=" + auto +
+				", taxi=" + taxi +
+				", lotacao=" + lotacao +
+				", onibusUrb=" + onibusUrb +
+				", onibusInt=" + onibusInt +
+				", caminhao=" + caminhao +
+				", moto=" + moto +
+				", carroca=" + carroca +
+				", bicicleta=" + bicicleta +
+				", tempo='" + tempo + '\'' +
+				", turno='" + turno + '\'' +
+				", regiao='" + regiao + '\'' +
+				'}';
+	}
 }
