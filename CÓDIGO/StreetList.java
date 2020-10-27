@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+package CÓDIGO;
 
 //LISTA COM CADA NODO SENDO UMA RUA DIFERENTE
 
@@ -60,7 +60,7 @@ public class StreetList {
 
     public String pesquisaLogradouro(){
         //consulta da rua/av/trav que tem mais acidentes
-        //ve o nodo StreetList que tem maior tamanho
+        //ve o nodo CÓDIGO.StreetList que tem maior tamanho
         return "";
     }
 

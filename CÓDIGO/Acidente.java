@@ -1,10 +1,14 @@
-//package Trabalho1;
+package CÓDIGO;//package Trabalho1;
 import java.time.LocalDateTime;
 import java.util.Date;
 
 public class Acidente {
 
+	private  String logradouro;
+
 	private String nomeLogradouro;
+
+	private String tipoAcidente;
 
 	//private Date dataHora;
 	private LocalDateTime data;
@@ -42,11 +46,13 @@ public class Acidente {
 	public Acidente() {
 	}
 
-	public Acidente(String nomeLogradouro, LocalDateTime data, String diaDaSemana, int feridos, int fatais, int auto,
+	public Acidente(String logradouro, String nomeLogradouro, String tipoAcidente, LocalDateTime data, String diaDaSemana, int feridos, int fatais, int auto,
 			int taxi, int lotacao, int onibusUrb, int onibusInt, int caminhao, int moto, int carroca, int bicicleta,
 			String tempo, String turno, String regiao) {
 		super();
+		this.logradouro = logradouro;
 		this.nomeLogradouro = nomeLogradouro;
+		this.tipoAcidente = tipoAcidente;
 		//this.dataHora = dataHora;
 		this.data = data;
 		this.diaDaSemana = diaDaSemana;
@@ -66,8 +72,16 @@ public class Acidente {
 		this.regiao = regiao;
 	}
 
+	public String getLogradouro() {
+		return logradouro;
+	}
+
 	public String getNomeLogradouro() {
 		return nomeLogradouro;
+	}
+
+	public String getTipoAcidente() {
+		return tipoAcidente;
 	}
 
 	//public Date getDataHora() {

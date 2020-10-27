@@ -1,4 +1,4 @@
-//package Trabalho1;
+package CÓDIGO;//package Trabalho1;
 
 //LISTA COM CADA NODO SENDO UM ACIDENTE DA RUA
 
