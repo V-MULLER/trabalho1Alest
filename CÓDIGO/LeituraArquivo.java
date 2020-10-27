@@ -40,7 +40,7 @@ public class LeituraArquivo {
         // Mude numLinhas para algum numero pequeno para executar testes mais rapidamente.
         // Ex:
         // for (int i = 0; i < 50; i++) {
-        for (int i = 0; i < numLinhas; i++) {
+        for (int i = 0; i < 3; i++) {
 
             String[] campos = linhas[i].split(";"); // divide a string pelo espaco em branco
 
@@ -96,10 +96,10 @@ public class LeituraArquivo {
             String tempo = campos[15];
             String turno = campos[16];
             String regiao = campos[17];
-            //System.out.println(logradouro+" "+nomeLog+"; "+tipoAcidente+"; "+data.toString()+"; "+tempo+"; "+turno+"; "+regiao);
-            //Acidente aci = new Acidente(logradouro,nomeLog, tipoAcidente, data,diaSemana,feridos,fatais,auto,taxi,lotacao,onibusUrb,onibusInt,caminhao,moto, carroca,bicicleta, tempo, turno, regiao);
-            Acidente aci = new Acidente(logradouro, nomeLog, tipoAcidente, data,diaSemana,feridos,fatais,auto,taxis,lotacao,onibusUrb,onibusInt,caminhao,moto, carroca,bicicleta, tempo, turno, regiao);
-            System.out.println(aci);
+            System.out.println(logradouro+" "+nomeLog+"; "+tipoAcidente+"; "+data.toString()+"; "+tempo+"; "+turno+"; "+regiao);
+
+            //Acidente aci = new Acidente(logradouro, nomeLog, tipoAcidente, data,diaSemana,feridos,fatais,auto,taxis,lotacao,onibusUrb,onibusInt,caminhao,moto, carroca,bicicleta, tempo, turno, regiao);
+            //System.out.println(aci);
         }
 
         StreetList listaRua = new StreetList();
