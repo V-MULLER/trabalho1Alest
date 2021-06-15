@@ -11,7 +11,7 @@ public class Acidente {
 	private String tipoAcidente;
 
 	//private Date dataHora;
-	private LocalDateTime data;
+	private LocalDateTime dataa;
 
 	private String diaDaSemana;
 
